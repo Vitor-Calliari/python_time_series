@@ -20,3 +20,22 @@ com comandos dentro do código.
 """
 
 
+# Segue atividade, implemente os métodos abaixo:
+
+def maximo(nums):
+    """Retorna o maior elemento de uma lista não vazia, sem usar max()."""
+    # TODO: percorra a lista guardando o maior atual
+    ...
+
+
+def e_par(n: int) -> bool:
+    """Retorna True se n é par, senão False."""
+    # TODO: retorne se n é par
+    ...
+  
+
+def fatorial(n: int) -> int:
+    """Retorna n! (n fatorial). Para n<0, levante ValueError."""
+    # TODO: implemente de forma iterativa (sem recursão)
+    ...
+
