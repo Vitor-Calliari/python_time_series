@@ -24,18 +24,25 @@ com comandos dentro do código.
 
 def maximo(nums):
     """Retorna o maior elemento de uma lista não vazia, sem usar max()."""
-    # TODO: percorra a lista guardando o maior atual
-    ...
+    maior = nums[0]
+    for n in nums[1:]:
+        if n > maior:
+            maior = n
+    return maior
 
 
 def e_par(n: int) -> bool:
     """Retorna True se n é par, senão False."""
-    # TODO: retorne se n é par
-    ...
+    return n % 2 == 0
   
 
 def fatorial(n: int) -> int:
     """Retorna n! (n fatorial). Para n<0, levante ValueError."""
-    # TODO: implemente de forma iterativa (sem recursão)
-    ...
+    if n < 0:
+        raise ValueError("Não é possível calcular o fatorial")
+    
+    resultado = 1
+    for i in range(1, n + 1):
+        resultado *= i
+    return resultado
 
